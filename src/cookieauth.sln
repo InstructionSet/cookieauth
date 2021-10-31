@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cookieauth.data", "cookieauth.data\cookieauth.data.csproj", "{D0CDE3B6-A262-4B47-BB1A-FEC5B06DD1D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cookieauth.domain", "cookieauth.domain\cookieauth.domain.csproj", "{6FE0E56D-93A5-4E7A-9DBE-0369BAD8315B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cookieauth.ui", "cookieauth.ui\cookieauth.ui.csproj", "{349FD37E-7B95-4363-BA8A-607B40820787}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0CDE3B6-A262-4B47-BB1A-FEC5B06DD1D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0CDE3B6-A262-4B47-BB1A-FEC5B06DD1D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0CDE3B6-A262-4B47-BB1A-FEC5B06DD1D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0CDE3B6-A262-4B47-BB1A-FEC5B06DD1D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE0E56D-93A5-4E7A-9DBE-0369BAD8315B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE0E56D-93A5-4E7A-9DBE-0369BAD8315B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE0E56D-93A5-4E7A-9DBE-0369BAD8315B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE0E56D-93A5-4E7A-9DBE-0369BAD8315B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{349FD37E-7B95-4363-BA8A-607B40820787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349FD37E-7B95-4363-BA8A-607B40820787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349FD37E-7B95-4363-BA8A-607B40820787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349FD37E-7B95-4363-BA8A-607B40820787}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
