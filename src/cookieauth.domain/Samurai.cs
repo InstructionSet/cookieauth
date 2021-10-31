@@ -5,5 +5,6 @@ namespace cookieauth.domain {
         public string Name { get; set; } = null!;
         public List<Quote> Quotes { get; set; } = new List<Quote>();
         public List<Battle> Battles { get; set; } = new List<Battle>();
+        public Horse Horse { get; set; } = null!;
     }
 }

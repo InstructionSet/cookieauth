@@ -12,6 +12,7 @@ public class SamuraiContext : DbContext
     public DbSet<Samurai> Samurais => Set<Samurai>();
     public DbSet<Quote> Quotes => Set<Quote>();
     public DbSet<Battle> Battles => Set<Battle>();
+    public DbSet<Horse> Horses => Set<Horse>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
