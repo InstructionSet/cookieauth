@@ -1,12 +1,16 @@
 ﻿using cookieauth.domain;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace cookieauth.data;
 public class SamuraiContext : DbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Data Source=localhost; Database=SamuraiDb;User Id=sa;Password=pass!word;");
+        optionsBuilder
+            .UseSqlServer("Data Source=localhost; Database=SamuraiDb;User Id=sa;Password=pass!word;")
+            .LogTo( Console.WriteLine, new []{ DbLoggerCategory.Database.Command.Name }, LogLevel.Information )
+            .EnableSensitiveDataLogging();
         base.OnConfiguring(optionsBuilder);
     }
     public DbSet<Samurai> Samurais => Set<Samurai>();
