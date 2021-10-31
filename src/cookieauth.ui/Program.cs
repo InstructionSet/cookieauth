@@ -20,23 +20,19 @@ public static class Utility
     public static void AddSamurai()
     {
         var samurai = new Samurai { Name = "Sampson" };
-        if (_context.Samurais is not null)
-        {
-            _context.Samurais.Add(samurai);
-            _context.SaveChanges();
-        }
+
+        _context.Samurais.Add(samurai);
+        _context.SaveChanges();
+
     }
     public static void GetSamurais(string text)
     {
-        var samurais = _context.Samurais?.ToList();
+        var samurais = _context.Samurais.ToList();
 
-        if (samurais is not null)
+        Console.WriteLine($"{text}: Samurai count is {samurais.Count}");
+        foreach (var samurai in samurais)
         {
-            Console.WriteLine($"{text}: Samurai count is {samurais!.Count}");
-            foreach (var samurai in samurais!)
-            {
-                Console.WriteLine(samurai.Name);
-            }
+            Console.WriteLine(samurai.Name);
         }
     }
 }
